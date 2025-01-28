@@ -9,7 +9,7 @@ describe('Покупка аватара', function () {
       cy.get('.header__container > .header__id').click({ force: true }); // Зашел на страницу тренера
       cy.get('[href="/shop"]').click(); // Нажал Сменить Аватар
       cy.get('.available > button').first().click({ force: true }); // Кликнул купить у первого доступного аватара
-      cy.get('.credit').type('CARDNUMBER'); // Номер карты
+      cy.get('.credit').type('4620869113632996'); // Номер карты
       cy.get('.k_input_ccv').type('125'); // CVV
       cy.get('.k_input_date').type('1225'); // Срок действия
       cy.get('.k_input_name').type('NAME');  // Имя
